@@ -628,7 +628,7 @@
                   <script src="js/all.min.js"></script>
                   <script src="js/lightslider.min.js"></script>
                   <script>
-                      $(document).ready(function () {
+                     $(document).ready(function () {
             var typed = new Typed('#typed', {
                 strings: [
                     "با برترین مهندسین",
@@ -657,6 +657,31 @@
                 pause: 3000,
                 enableTouch: false,
                 enableDrag: false,
+                responsive: [
+                    {
+                        breakpoint:1200,
+                        settings :{
+                            item: 3,
+                            slideMargin: 7,
+                            
+                        }
+                    },
+                    {
+                        breakpoint:768,
+                        settings :{
+                            item: 2,
+                            slideMargin: 7,
+                            
+                        }
+                    }
+                    , {
+                        breakpoint:576,
+                        settings :{
+                            item: 1,
+                            
+                        }
+                    }
+                ]
             });
 
         })
